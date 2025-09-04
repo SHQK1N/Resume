@@ -1,0 +1,116 @@
+<!-- Example: html.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #1F2937;
+            height: 100%;
+            color: #27AE60;
+        }
+        .code-animation {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            min-height: 180px;
+            background: rgba(55,65,81,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            color: #27AE60;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1.2rem;
+            padding: 24px;
+            overflow: auto;
+            white-space: pre-wrap;
+            z-index: 2;
+        }
+        .project-list {
+            margin-top: 24px;
+        }
+        .project-list li {
+            margin-bottom: 12px;
+        }
+        a, a:visited, a:hover, a:active, a:focus {
+            color: #27AE60 !important;
+            text-decoration: underline;
+        }
+        .upload-section {
+            margin-top: 32px;
+        }
+        .file-list {
+            margin-top: 16px;
+        }
+        .file-list li {
+            margin-bottom: 8px;
+        }
+        .download-link {
+            color: #27AE60 !important;
+        }
+
+        button {
+            position: absolute;
+            bottom:10px;
+            left:30px;
+            background: #27AE60;
+            height: 100px;
+            width: 200px;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+            height:480px;
+            width:980px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .Photo-section .file-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .Photo-section img {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="code-animation">
+        <div class="Photo-section">
+            <h3>JavaScript Projects :</h3>
+            <h4>Web Browser Game</h4>
+            <h4>Description:</h4>
+            <p>This project is a simple JavaScript game. Gameplay revolves around exploring interconnected rooms, solving puzzles, and uncovering hidden clues. The game's minimalist yet immersive visual style creates a strong sense of isolation<br>Every game and room has been made by me using HTML, JS and photoshop .</p>
+            <ul class="file-list2">
+                <img src="HTML PROJECT SS/JS-game/Game1.png" class="pic1">
+                <img src="HTML PROJECT SS/JS-game/Game2.png" class="pic2">
+                <img src="HTML PROJECT SS/JS-game/Game3.png" class="pic3">
+                <img src="HTML PROJECT SS/JS-game/Game4.png" class="pic4">
+                <img src="HTML PROJECT SS/JS-game/Game5.png" class="pic5">
+            </ul>
+            
+        </div>
+        <hr>
+        <div style="text-align:center;">
+            <button onclick="window.location.href='cv.html'">&larr; Back to CV</button>
+        </div>
+    </div>
+</body>
+</html>

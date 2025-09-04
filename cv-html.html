@@ -1,0 +1,138 @@
+<!-- Example: html.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Projects - Marino Cepele</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #1F2937;
+            height: 100%;
+            color: #27AE60;
+        }
+        .code-animation {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            min-height: 180px;
+            background: rgba(55,65,81,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            color: #27AE60;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1.2rem;
+            padding: 24px;
+            overflow: auto;
+            white-space: pre-wrap;
+            z-index: 2;
+        }
+        .project-list {
+            margin-top: 24px;
+        }
+        .project-list li {
+            margin-bottom: 12px;
+        }
+        a, a:visited, a:hover, a:active, a:focus {
+            color: #27AE60 !important;
+            text-decoration: underline;
+        }
+        .upload-section {
+            margin-top: 32px;
+        }
+        .file-list {
+            margin-top: 16px;
+        }
+        .file-list li {
+            margin-bottom: 8px;
+        }
+        .download-link {
+            color: #27AE60 !important;
+        }
+
+        button {
+            position: absolute;
+            bottom:10px;
+            left:30px;
+            background: #27AE60;
+            height: 100px;
+            width: 200px;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+            height:480px;
+            width:980px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .Photo-section .file-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .Photo-section img {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="code-animation">
+        <div class="Photo-section">
+            <h3>HMTL Projects :</h3>
+            <h4>Evangelion Wiki</h4>
+            <h4>Description:</h4>
+            <p>This project is a fan-made website dedicated to the "Neon Genesis Evangelion" series. It features a clean and retro design, with information about the characters, episodes, and movies. The website is built using HTML, CSS.
+            </p>
+            <ul class="file-list1">
+                <img src="HTML PROJECT SS/Eva-Website/Eva1.png" alt="Evangelion Wiki" class="pic1">
+                <img src="HTML PROJECT SS/Eva-Website/Eva2.png" alt="Evangelion Wiki" class="pic2">
+                <img src="HTML PROJECT SS/Eva-Website/Eva3.png" alt="Evangelion Wiki" class="pic3">
+            </ul>
+            
+            <hr>
+            <h4>E-Shops</h4>
+            <h4>Description:</h4>
+            <p>This project is a collection of random e-shops. It showcases various products and services, demonstrating the use of HTML and CSS for layout and design.
+            
+            <ul class="file-list2">
+                <img src="HTML PROJECT SS/Random-E-shops/E-shop1.png" alt="Evangelion Wiki" class="pic1">
+                <img src="HTML PROJECT SS/Random-E-shops/E-shop2.png" alt="Evangelion Wiki" class="pic2">
+            </ul>
+            <hr>
+            <h4>Phone Book Website</h4>
+            <h4>Description:</h4>
+            <p>This project is a complex phone book application built with PHP and MySQL. It allows multiple different users to add, edit, and delete contacts. The users can also edit their account changing their firstname, lastname, phone number, photo and email!<br>Every user has their own unique contact list.
+            </p>
+            <ul class="file-list2">
+                <img src="HTML PROJECT SS/Haleon-Phone-Center/Book1.png" class="pic1">
+                <img src="HTML PROJECT SS/Haleon-Phone-Center/Book2.png" class="pic2">
+                <img src="HTML PROJECT SS/Haleon-Phone-Center/Book3.png" class="pic3">
+                <img src="HTML PROJECT SS/Haleon-Phone-Center/Book4.png" class="pic4">
+                <img src="HTML PROJECT SS/Haleon-Phone-Center/Book6.png" class="pic6">
+                <img src="HTML PROJECT SS/Haleon-Phone-Center/Book7.png" class="pic7">
+            </ul>
+            
+        </div>
+        <hr>
+        <div style="text-align:center;">
+            <button onclick="window.location.href='cv.html'">&larr; Back to CV</button>
+        </div>
+    </div>
+</body>
+</html>

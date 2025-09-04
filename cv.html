@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marino Cepele</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #1F2937;
+            height: 100%;
+            color: #27AE60;
+        }
+
+        #background {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .code-animation {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            height: 180px;
+            background: rgba(55,65,81,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            color: #27AE60;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1.2rem;
+            padding: 24px;
+            overflow: hidden;
+            white-space: pre;
+            z-index: 2;
+        }
+
+        .DomainExpansion {
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            height: 200px;
+            background: rgba(55,65,81,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            color: #27AE60;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1.1rem;
+            padding: 24px;
+            z-index: 2;
+        }
+
+        #domainAmplification {
+            position: absolute;
+            top: 580px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            height: 100px;
+            background: rgba(55,65,81,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            color: #27AE60;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1.1rem;
+            padding: 24px;
+            z-index: 2;
+        }
+
+        #domainSimple {
+
+            position: absolute;
+            top: 780px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            height: 100px;
+            background: rgba(55,65,81,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            color: #27AE60;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1.1rem;
+            padding: 24px;
+            z-index: 2;
+        }
+
+        .logo {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            opacity: 1;
+            animation: shoot 6s linear forwards;
+            pointer-events: none;
+        }
+
+        @keyframes shoot {
+            0% {
+                transform: translate(0px, 0px) scale(0.8) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(calc(100vw + 60px)) scale(1.2) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 12px 24px;
+            margin-top: 12px;
+        }
+        .languages-grid div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: flex-start;
+            font-size: 1.1rem;
+            font-weight: normal;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            color: #27AE60; 
+        }
+        a,
+        a:visited,
+        a:hover,
+        a:active,
+        a:focus {
+            color: #27AE60 !important;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="code-animation" id="codeAnimation"></div>
+    <div class="DomainExpansion" id="specialties">
+        <strong style="color: #27AE60;">Advanced proficiency in:</strong><br>
+        <div class="languages-grid">
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" style="height:32px;vertical-align:middle;"> <a href="cv-html.html">HTML</a>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" style="height:32px;vertical-align:middle;">CSS
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="height:32px;vertical-align:middle;"> <a href="cv-js.html">JavaScript</a>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" style="height:32px;vertical-align:middle;"> <a href="cv-php.html">PHP</a>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" style="height:32px;vertical-align:middle;"> <a href="">WordPress</a>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height:32px;vertical-align:middle;"> <a href="">Java</a>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop" style="height:32px;vertical-align:middle;"> <a href="cv-ps.html">Photoshop</a>
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Adobe_Animate_CC_icon_%282020%29.svg" alt="Adobe Animate" style="height:32px;vertical-align:middle;"> <a href="">Adobe Animate</a>
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg" alt="DaVinci Resolve" style="height:32px;vertical-align:middle;"> <a href="">DaVinci Resolve</a>
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Autodesk_3D_Studio_Max_Icon_from_2022_rebrand.jpg" alt="3ds" style="height:32px;vertical-align:middle;"> <a href="cv-3d.html">3DS MAX</a>
+            </div>
+        </div>
+    </div>
+    <div class="DomainExpansion" id="domainAmplification">
+        <strong>Basic proficiency in:</strong><br>
+        <div class="languages-grid">
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" style="height:32px;vertical-align:middle;">C
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" style="height:32px;vertical-align:middle;"> C++
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" alt="OpenGL" style="height:32px;vertical-align:middle;"> OpenGL
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height:32px;vertical-align:middle;">Python 
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine" style="height:32px;vertical-align:middle;"> <a href="">Unreal Engine</a>
+            </div>
+            <div>
+                <!-- Empty cell for grid symmetry -->
+            </div>
+        </div>
+    </div>
+    <div class="DomainExpansion" id="domainSimple">
+        <strong>navigate further</strong>
+        <div class="projects"> 
+            <a href=""></a>
+        </div>
+        <div style="margin-top:24px;">
+            <a href="https://www.instagram.com/marino.cpl/" target="_blank" style="margin-right:24px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Instagram-Gradient-Logo-PNG.png/640px-Instagram-Gradient-Logo-PNG.png" alt="Instagram" style="height:32px;vertical-align:middle;"> Instagram
+            </a>
+            <a href="https://mail.google.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gmail_Icon_%282013-2020%29.svg/640px-Gmail_Icon_%282013-2020%29.svg.png" alt="Gmail" style="height:32px;vertical-align:middle;"> mario4personalz@gmail.com
+            </a>
+        </div>
+    </div>
+    <script>
+        // Shooting logos background
+        const background = document.getElementById('background');
+        const logoUrls = [
+            // Specialize in
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+            // Dabbled in
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg'
+        ];
+
+        function createShootingLogo() {
+            const img = document.createElement('img');
+            img.src = logoUrls[Math.floor(Math.random() * logoUrls.length)];
+            img.className = 'logo';
+            const startY = Math.random() * window.innerHeight;
+            img.style.top = `${startY}px`;
+            img.style.left = `-60px`;
+            img.onerror = () => {
+                console.error("Image failed to load:", img.src);
+            };
+            background.appendChild(img);
+            setTimeout(() => {
+                if (background.contains(img)) {
+                    background.removeChild(img);
+                }
+            }, 6000);
+        }
+        setInterval(createShootingLogo, 300);
+
+        // Code animation
+        const codeLines = [
+            "function MarinoCepele-CV() {",
+            "    console.log('Hello world! Welcome to my CV.');",
+            "}",
+            "",
+            "MarinoCepele-CV();",
+            "",
+            "// Hover over the various languages/tools to see my projects!"
+        ];
+        let i = 0, j = 0, output = "";
+
+        function typeCode() {
+            if (i < codeLines.length) {
+                if (j <= codeLines[i].length) {
+                    document.getElementById('codeAnimation').textContent = output + codeLines[i].slice(0, j) + (j % 2 === 0 ? '|' : '');
+                    j++;
+                    setTimeout(typeCode, 50);
+                } else {
+                    output += codeLines[i] + "\n";
+                    i++;
+                    j = 0;
+                    setTimeout(typeCode, 300);
+                }
+            } else {
+                document.getElementById('codeAnimation').textContent = output;
+            }
+        }
+
+        window.onload = () => {
+            setTimeout(typeCode, 500);
+        };
+    </script>
+</body>
+</html>
